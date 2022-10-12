@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="calc">
+        <div id="resultSpc">
+            <div id="operation"></div>
+            <div id="result"></div>
+        </div>
+        <div id="numpad">
+            <div id="nums">
+                <button onmouseup="add('7')">7</button>
+                <button onmouseup="add('8')">8</button>
+                <button onmouseup="add('9')">9</button>
+                <button onmouseup="add('4')">4</button>
+                <button onmouseup="add('5')">5</button>
+                <button onmouseup="add('6')">6</button>
+                <button onmouseup="add('1')">1</button>
+                <button onmouseup="add('2')">2</button>
+                <button onmouseup="add('3')">3</button>
+                <button onmouseup="add('0')">0</button>
+                <button onmouseup="add('+')">+</button>
+                <button onmouseup="add('-')">-</button>
+                <button onmouseup="add('/')">/</button>
+                <button onmouseup="add('*')">*</button>
+                <button onmouseup="equal()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

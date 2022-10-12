@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(200, 200, 200);
+}
+
+#calc{
+    background-color: gray;
+    margin: 20px auto;
+    width: 450px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#resultSpc{
+    height: 100px;
+    width: auto;
+    margin: 10px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 10px;
+}
+
+#operation{
+    text-align: end;
+    font-size: 50;
+    padding-right: 10px;
+}
+
+#result{
+    font-size: 25;
+    text-align: end;
+    padding-right: 10px;
+}
+
+#numpad{
+    background-color: rgb(150, 150, 150);
+    width: auto;
+    height: 360;
+    margin: 10px;
+    border-radius: 10px;
+    display: flexbox;
+    align-content: center;
+}
+#nums{
+    height: 360;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 115px);
+}
+
+button{
+    height: 50px;
+    font-size: 20;
+}
