@@ -14,6 +14,7 @@ function mark(id){
     let c = check()
     if (typeof(c)==='object'){
         gameover(c[0])
+        return
     }
     enemy()
 }
@@ -32,6 +33,17 @@ function enemy(){
     }
 
     let opt
+    //block player win
+    notmarked.forEach(i => {
+        array[i].sign = "X"
+        let c = check()
+        if (typeof(c) === "object"){
+            opt = i
+        }
+        array[i].sign = undefined
+    });
+
+    // get obvious win
     notmarked.forEach(i => {
         array[i].sign = "O"
         let c = check()
@@ -40,6 +52,8 @@ function enemy(){
         }
         array[i].sign = undefined
     });
+    
+
     if (typeof(opt)!="number"){
         opt = notmarked[~~(notmarked.length * Math.random())]
     }
@@ -47,11 +61,11 @@ function enemy(){
 
     array[opt].sign = "O"
     document.getElementById(opt).innerHTML = "O"
-    notmarked = []
 
     let c = check()
     if (typeof(c)==='object'){
         gameover(c[0])
+        return
     }
 }
 
@@ -79,7 +93,7 @@ function check(){
     //draw
     for (let i=0; i<9; i++){
         if (array[i].sign==undefined){break}
-        if (i==8){gameover("draw")}
+        if (i==8){return ["draw"]}
     }
 }
 
