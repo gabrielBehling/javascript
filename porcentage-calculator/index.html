@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de porcentagem</title>
+</head>
+<body>
+
+
+    <div class="separador">
+        <div class="text">
+            <p>Quanto é <input id="pcdn1" type="number">% de <input id="pcdn2" type="number">?</p>
+        </div>
+            <div class="result">
+            <h3 id="result1" style="margin-left:10px;"></h3>
+        <button onclick="pcdn()">Calc</button></div>
+    </div>
+
+    <div class="separador">
+        <div class="text">
+            <p>O valor <input id="vdn1" type="number"> é qual porcentagem de <input id="vdn2" type="number">?</p>
+        </div>
+        <div class="result">
+            <h3 id="result2"></h3>
+            <button onclick="vdn()">Calc</button>
+        </div>
+    </div>
+    
+    <div class="separador">
+        <div class="text">
+            <p>Tenho um valor de <input id="pcup1" type="number"> e quero AUMENTAR <input id="pcup2" type="number">%  Qual é o resultado?</p>
+        </div>
+        <div class="result">
+            <h3 id="result3"></h3>
+            <button onclick="pcup()">Calc</button>
+        </div>
+    </div>
+
+    <div class="separador">
+        <div class="text">
+            <p>Tenho um valor de <input id="pcd1" type="number"> e quero DIMINUIR <input id="pcd2" type="number">%  Qual é o resultado?</p>
+        </div>
+        <div class="result">
+            <h3 id="result4"></h3>
+            <button onclick="pcd()">Calc</button>
+        </div>
+    </div>
+
+    <div class="separador">
+        <div class="text">
+            <p>Tenho um valor de <input id="atpu1" type="number"> que AUMENTOU para <input id="atpu2" type="number">  Qual foi o aumento percentual?</p>
+        </div>
+        <div class="result">
+            <h3 id="result5"></h3>
+            <button onclick="atpu()">Calc</button>
+        </div>
+    </div>
+
+    <div class="separador">
+        <div class="text">
+            <p>Tenho um valor de <input id="atpd1" type="number"> que DIMINUIU para <input id="atpd2" type="number">  Qual foi a diminuição percentual?</p>
+        </div>
+        <div class="result">
+            <h3 id="result6"></h3>
+            <button onclick="atpd()">Calc</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
